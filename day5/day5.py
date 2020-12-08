@@ -1,6 +1,13 @@
 import math
 
 
+def read_input():
+    file = open('input.txt')
+    puzzle_input = [line.strip() for line in file]
+    file.close()
+    return puzzle_input
+
+
 def interval(tuple, char):
     lower, upper = tuple[0], tuple[1]
     middle = (upper - lower) / 2
@@ -22,7 +29,7 @@ def find_missing_seat(seat_list):
 
 
 def main():
-    puzzle_input = [line.strip() for line in open('input.txt')]
+    puzzle_input = read_input()
     ids = [seat_id(s) for s in puzzle_input]
     ids.sort()
 

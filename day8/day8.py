@@ -38,7 +38,7 @@ def part1(puzzle_input):
 
 
 #brute force solution: change every `jmp` and `nop` and check if we reach the end of the input
-#TODO: refactor! part1() can be used in part2
+#TODO: refactor!
 def part2(puzzle_input):
     for entry in puzzle_input:
         op = entry[0]

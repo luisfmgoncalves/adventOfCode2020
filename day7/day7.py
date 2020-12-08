@@ -15,7 +15,6 @@ def contains(bag, puzzle_input):
     for b in puzzle_input[bag]:
         if b[1] == "shiny gold" or contains(b[1], puzzle_input):
             return True
-
     return False
 
 

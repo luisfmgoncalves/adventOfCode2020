@@ -14,6 +14,7 @@ def is_valid_password_part2(min, max, chr, pwd):
 
 
 def main():
+    #iterate through the contents of the file only once
     f = open('input.txt')
     part1_result = 0
     part2_result = 0

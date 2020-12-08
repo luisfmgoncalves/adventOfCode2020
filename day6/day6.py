@@ -44,7 +44,6 @@ def part2(puzzle_input):
 
 def main():
     puzzle_input = read_input()
-    print(puzzle_input)
     print('Part 1: ' + str(part1(puzzle_input))) #6521
     print('Part 2: ' + str(part2(puzzle_input))) #3305
 
