@@ -52,9 +52,7 @@ def run(puzzle_input, part):
             seat_row = ''
             for col in range(0, len(previous[row])):
                 seat = previous[row][col]
-                if seat == '.':
-                    seat = '.'
-                else:
+                if seat != '.':
                     #most likely there is a better way to do this
                     if part == 1:
                         adjacent = find_adjacent_part1(row, col, previous)
