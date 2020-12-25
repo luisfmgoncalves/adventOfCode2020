@@ -57,7 +57,6 @@ def get_valid_tickets(rules, tickets):
 def part2(rules, tickets):
     own_ticket = tickets[0]
     valid_tickets = get_valid_tickets(rules, tickets)
-    ticket_per_class = {}
 
     if len(valid_tickets) == 0:
         print('There are no valid tickets in that input. Exiting...')
@@ -83,7 +82,6 @@ def part2(rules, tickets):
             if i != j:
                 possible_fields[j].discard(this_field)
 
-    print(possible_fields)
     result = 1
     for value in possible_fields:
         if possible_fields[value].pop().startswith("departure"):
